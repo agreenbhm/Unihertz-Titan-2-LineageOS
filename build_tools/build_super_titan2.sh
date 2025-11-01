@@ -2,7 +2,7 @@
 set -euo pipefail
 
 if [ "$#" -ne 2 ]; then
-    echo "Usage: $@ <unsparsed_stock_super.img> <lineage_gsi_image>"
+    echo "Usage: $0 <unsparsed_stock_super.img> <lineage_gsi_image>"
     echo "Extracted system_dlkm, system_ext, vendor, vendor_dlkm, and odm_dlkm images must be in working directory"
     echo "Extract from unsparsed super.img with: lpunpack super.raw.img super_partitions/"
     echo "Unsparse sparsed super.img with: simg2img super.img super.raw.img"
